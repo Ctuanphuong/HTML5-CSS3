@@ -1,0 +1,756 @@
+        body {
+            background: url(../images/body-bg.jpg);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #48494a;
+            margin: 0;
+            padding: 0;
+        }
+        /* 
+    //1. PHẦN HEADER SECTION  */
+        
+        .top-container::before {
+            content: "";
+            position: absolute;
+            width: 48%;
+            height: 100%;
+            background: url(../images/hero-bg.png);
+            background-size: cover;
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        
+        .logomenu {
+            padding-top: 20px;
+        }
+        
+        header {
+            width: 90%;
+            margin: 0 auto;
+        }
+        /* //Phần Css logo crayon */
+        
+        .logo {
+            display: flex;
+            position: absolute;
+        }
+        
+        .logo>a>img {
+            width: 90px; 
+            height: 80px;
+        }
+        
+        .text-logo {
+            margin-top: 25px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+        }
+        /* //Thanh menu */
+        
+        nav {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .flex-menu {
+            display: flex;
+            justify-content: end;
+        }
+        
+        .flex-menu>li {
+            list-style: none;
+        }
+        
+        .flex-menu>li>a {
+            text-decoration: none;
+            margin: 0 20px;
+            text-transform: uppercase;
+            color: #48494a;
+            font-weight: 500;
+        }
+        
+        .flex-menu>li>a:hover {
+            color: #e9114e;
+            font-weight: 500;
+        }
+        
+        .flex-menu .active {
+            color: #e9114e;
+        }
+        /* //Phần Detail của section top */
+        
+        .detail-top {
+            display: flex;
+        }
+        /* //Phần ontent của section top */
+        
+        .content-top {
+            max-width: 40%;
+            margin-left: 80px;
+            margin-top: 50px;
+        }
+        
+        .content-top>h3 {
+            color: white;
+            font-size: 28px;
+            font-weight: 100;
+        }
+        
+        .sc {
+            color: #fec913;
+            font-size: 46px;
+            font-weight: bold;
+            text-transform: uppercase;
+            ;
+        }
+        
+        .content-top>p {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            width: 92%;
+        }
+        /* //Nút Contact của section top */
+        
+        .btn-top>a {
+            margin-top: 50px;
+            width: 130px;
+            display: flex;
+            padding: 14px 12px;
+            border-radius: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            background-color: #e9114e;
+            border: 1px solid transparent;
+            color: #ffff;
+            transition: all 0.5s ease 0s;
+            text-decoration: none;
+            font-weight: 500;
+            justify-content: center;
+        }
+        
+        .btn-top img {
+            width: 19px;
+            height: 13px;
+            margin-top: 2px;
+            margin-left: 10px;
+        }
+        
+        .btn-top>a:hover {
+            color: #fff;
+            box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+            color: #fff;
+            transform: translateY(-7px);
+            transition: all 0.3s ease 0s;
+        }
+        /* /* //PHẦN ảnh của section top* */
+        
+        .img-top {
+            width: 60%;
+            margin: 50px 20px;
+        }
+        /* ---end header section--- */
+        /* 
+    //2. PHẦN GIỚI THIỆU CHUNG VỀ TRƯỜNG // */
+        
+        .about-school {
+            width: 90%;
+            margin: 100px auto;
+            text-align: center;
+        }
+        
+        .about-school h1 {
+            color: #082465;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .about-school p {
+            font-size: 20px;
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .about-school img {
+            width: 600px;
+           
+        }
+        
+        .btn-about>a {
+            margin-top: 50px;
+            width: 110px;
+            display: flex;
+            padding: 14px 12px;
+            border-radius: 10px;
+            font-size: 13px;
+            text-transform: uppercase;
+            background-color: #e9114e;
+            border: 1px solid transparent;
+            color: #ffff;
+            transition: all 0.5s ease 0s;
+            text-decoration: none;
+            font-weight: 500;
+            justify-content: center;
+            margin: 10px auto;
+            ;
+        }
+        
+        .btn-about img {
+            width: 19px;
+            height: 13px;
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+        
+        .btn-about>a:hover {
+            color: #fff;
+            box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+            transform: translateY(-7px);
+            transition: all 0.3s ease 0s;
+        }
+        /* 3.PHẦN TEACHER */
+        
+        .grid-teacher {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            margin: 50px 0;
+        }
+        
+        .teacher>img {
+            border: 3px solid #119bf2;
+            width: 250px;
+            height: 250px;
+        }
+        
+        .teacher h3 {
+            color: #082465;
+        }
+        
+        .teacher a {
+            text-decoration: none;
+        }
+        
+        .teacher a:hover {
+            text-decoration: none;
+            color: #e9114e;
+        }
+        /* --end teacher-- */
+        /* 4.ABOUT VEHICLES */
+        
+        .bus>img {
+            width: 700px;
+            height: 300px;
+        }
+        
+        .slideShow {
+            max-width: 1000px;
+            position: relative;
+            margin: 50px auto;
+            max-height: 400px;
+        }
+        
+        .next {
+            right: 0;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            transition: 0.5s ease;
+            background-color: #e9114e;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 13px 22px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.5s ease;
+            border-radius: 100%;
+            background-color: #082465;
+        }
+        /* --end vehicles-- */
+        /* 5.FEEDBACK */
+        
+        .container-feedback {
+            display: flex;
+        }
+        
+        .about-feedback {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-feedback h1 {
+            color: #082465;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .about-feedback p {
+            font-size: 20px;
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .feedback-bg {
+            display: flex;
+            justify-content: end;
+        }
+        
+        .feedback-bg>img {
+            position: absolute;
+            width: 18%;
+            z-index: -1;
+        }
+        
+        .fb-container {
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 75%;
+            margin: 55px auto;
+            box-shadow: 0px 0px 5px 0px rgba(163, 158, 163, 1);
+            background-color: white;
+        }
+        
+        .fb-container-detail {
+            display: flex;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            margin-left: 40px;
+        }
+        
+        .fb-avatar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            border: 1px solid #082465;
+        }
+        
+        .fb-detail {
+            text-align: start;
+            margin-left: 20px;
+            margin-top: 20px;
+            line-height: 30px;
+        }
+        
+        .text-h3 {
+            color: #082465;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        
+        .text-p {
+            font-size: 20px;
+        }
+        
+        .fb-content>p {
+            font-size: 18px;
+            text-align: justify;
+            padding-bottom: 50px;
+            width: 90%;
+        }
+        /* //6.FORM CONTACT */
+        
+        .about-contact {
+            width: 90%;
+            margin: 100px auto 40px;
+            text-align: center;
+        }
+        
+        .about-contact h1 {
+            color: #082465;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .about-contact p {
+            font-size: 20px;
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .frm-form {
+            width: 90%;
+            text-align: center;
+            margin-left: 85px;
+        }
+        
+        .ip-same {
+            width: 500px;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+            border: 1px solid white;
+            background-color: rgba(204, 204, 204, 0.918);
+        }
+        
+        .ip-same::placeholder {
+            color: white;
+        }
+        
+        .ip-mess {
+            height: 100px;
+            width: 500px;
+            margin: 10px 0 50px;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            outline: none;
+            border: 1px solid white;
+            background-color: rgba(204, 204, 204, 0.918);
+        }
+        
+        .ip-mess::placeholder {
+            color: white;
+        }
+        
+        .btn-send {
+            padding: 10px 50px;
+            background-color: #e9114e;
+            border: 1px solid #e9114e;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: white;
+        }
+        
+        .btn-send:hover {
+            color: #fff;
+            box-shadow: 0px 5px 10px -3px rgba(0, 0, 0, 0.7);
+            transform: translateY(-7px);
+            transition: 0.5s ease;
+        }
+        
+        .img-contact {
+            display: flex;
+            justify-content: left;
+        }
+        
+        .img-contact>img {
+            width: 15%;
+            position: absolute;
+            z-index: -1;
+        }
+        /* 7.PHẦN MAPS */
+        
+        .maps {
+            margin-top: 150px;
+            border: 2px solid #eef206;
+        }
+        
+        .maps>iframe {
+            width: 100%;
+            height: 500px;
+        }
+        
+        .text-maps>p {
+            text-align: center;
+            color: #e9114e;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px;
+        }
+        /* 7.PHẦN TEXT CUỐI */
+        
+        .about-text {
+            width: 90%;
+            margin: 80px auto;
+            text-align: center;
+        }
+        
+        .txt-h1 {
+            color: #082465;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .txt-h2 {
+            color: #fec913;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .txt-p {
+            font-size: 20px;
+            font-weight: 400;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .text-section {
+            padding-bottom: 20px;
+        }
+        /* PHẦN FOOTER */
+        
+        footer {
+            background-color: #082465;
+            text-align: center;
+            font-size: 15px;
+            color: #ffff;
+            padding-bottom: 10px;
+        }
+        
+        .power {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img-ft {
+            width: 80px;
+            height: 40px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        /* //PHẦN ABOUT US */
+        
+        .top-about-container::before {
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 230px;
+            background: url(../images/hero-bg.png);
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        
+        .about-us {
+            width: 90%;
+            margin: 250px auto 50px;
+            text-align: center;
+        }
+        
+        .about-us h1 {
+            color: #082465;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .about-us p {
+            font-size: 20px;
+            font-weight: 400;
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .about-us img {
+            width: 700px;
+            margin: 70px 0 50px;
+        }
+        /* PHẦN ABOUT */
+        
+        .flex-icon {
+            display: flex;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        
+        .flex-icon span {
+            margin-top: 5px;
+            font-size: 27px;
+            font-weight: bold;
+            color: #595b60;
+        }
+        
+        .flex-icon svg {
+            fill: #1cf57a;
+        }
+        
+        .introduce {
+            width: 70%;
+            margin: 0 auto;
+        }
+        
+        .about-detail>p {
+            font-size: 18px;
+            margin-left: 12px;
+            line-height: 30px;
+        }
+        
+        .about-detail .text-special {
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 12px;
+        }
+        
+        .about-detail>ul>li {
+            margin: 10px 30px;
+            font-size: 18px;
+        }
+        
+        .introduce .img-end {
+            text-align: center;
+            margin: 50px auto 50px;
+        }
+        /* //PHẦN PHẢN HỒI */
+        
+        .fb-container-student {
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 75%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 5px 0px rgba(163, 158, 163, 1);
+            background-color: white;
+        }
+        
+        .rated {
+            margin: 30px auto 70px;
+            width: 60%;
+            border: 1px solid white;
+        }
+        
+        .rated svg {
+            fill: #1cf57a;
+            margin-top: 13px;
+            margin-right: 10px;
+        }
+        
+        .svgp {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(233, 229, 229, 0.68);
+            width: 40%;
+            border-radius: 40px;
+            margin-bottom: 15px;
+            margin-left: 240px;
+            margin-top: 20px;
+        }
+        
+        .rated h1 {
+            font-size: 28px;
+            margin-left: 250px;
+            font-weight: 600;
+        }
+        
+        .rated p {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        
+        .rated .txt-rate {
+            line-height: 20px;
+            font-size: 16px;
+            margin-left: 350px;
+        }
+        
+        .point {
+            background-color: #1cf57a;
+            width: 350px;
+            height: 15px;
+            margin-right: 30px;
+            border-radius: 30px;
+            margin-left: 10px;
+        }
+        
+        .rate-input {
+            margin-left: 180px;
+        }
+        
+        .flex-p {
+            display: flex;
+        }
+        
+        .flex-p span {
+            font-weight: 600;
+        }
+
+        /* GIÁO VIÊN */
+        .about-teacher {
+                width: 90%;
+                margin: 250px auto 50px;
+                text-align: center;
+            }
+            .about-teacher h1 {
+                color: #082465;
+                font-weight: bold;
+                font-size: 35px;
+            }
+            
+            .about-teacher p {
+                font-size: 20px;
+                font-weight: 400;
+                width: 80%;
+                margin: 0 auto;
+            }
+                 
+        .grid-teacher-bonus {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 10px;
+            margin: 50px 0;
+        }
+        
+        .teacher-bonus>img {
+            border: 2px solid #119bf2;
+            width: 200px;
+            height: 200px;
+            
+        }
+        
+        .teacher-bonus h3 {
+            color: #082465;
+            font-size: 14px;
+        }
+        
+        .teacher-bonus a {
+            text-decoration: none;
+        }
+        
+        .teacher-bonus a:hover {
+            text-decoration: none;
+            color: #e9114e;
+        }
+      .teachers{ 
+        width: 90%;
+        margin: 0 auto;
+      }
+
+
+      /* //Phần liên hệ */
+ .img-icons>a>img{ 
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+ }
+ .img-icons{ 
+    display: flex;
+   
+ }
+ .img-icons>a{
+    color: #082465;
+    font-weight: 20px;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ .img-icons>a:hover{
+    color:#e9114e;
+    
+ }
+ .icons-setion{
+    width: 90%;
+    margin: 70px auto 0px;
+    text-align: center;
+ }
+ .container-img-icons{ 
+  
+    width: 100%;
+    margin: 20px 410px;
+ }

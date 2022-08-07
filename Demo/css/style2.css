@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div-logo{
+    width: 100%;
+    height: 280px;
+    background-color: rgb(67, 64, 64);
+    text-align: center;
+}
+
+.logo{
+    margin-top: 60px;
+}
+
+.h1{
+    margin-top: -200px;
+    color: white;
+}
+
+nav{
+    background-color: brown;
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+
+
+nav ul li{
+    display: inline;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 0px auto;
+    color: white;
+    font-size: 18px;
+    margin: 0px 50px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+nav ul{
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+.banner{
+    background-color: black;
+    width: 100%;
+    height: 360px;
+}
+
+.div-banner{
+    width: 75%;
+    padding-top: 30px;
+    display: flex;
+    margin: 0px auto;
+}
+
+.div-banner .img img{
+    width: 800px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.text-banner{
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(39, 40, 40);
+    width: 100%;
+    border-radius: 3px;
+}
+
+#tiltle{
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#text{
+    font-size: 14px;
+    color: rgb(192, 197, 202);
+    margin-left: 28px;
+    line-height: 20px;
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+#red{
+    color: brown;
+}
+
+.text-banner button{
+    margin-left: 28px;
+    height: 38px;
+    width: 260px;
+    background-color: rgb(181, 22, 22);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.main{
+    margin: 0px auto;
+    width: 75%;
+    margin-bottom: 100px;
+    /* margin-left: 100px; */
+}
+
+#title{
+    margin-top: 60px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.img-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    margin-top: 20px;
+}
+
+.img-text{
+    text-align: center;
+    border: 1px solid rgb(190, 182, 182);
+}
+
+.text-price{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.p{
+    background-color: black;
+    height: 48px;
+    color: rgb(110, 107, 107);
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+}

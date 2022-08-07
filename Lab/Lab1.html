@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <section class="wapper">
+        <div class="container">
+            <header class="header-main">
+                <div class="logo">
+                    <a href=""><img src="images/logo1.jpg" alt="" class="logo1"></a>
+                    <a href=""><img src="images/logo2.jpg" alt="" class="logo2"></a>
+                </div>
+                <div class="text-orange text-5xl">
+                    <p>HTML5 & CSS3</p>
+                </div>
+            </header>
+            <nav class="nav-main">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="border-r">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">HTML5 cơ bản</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">HTML 5 nâng cao</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">Kỹ thuật HTML</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">Tin tức HTML</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-r">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="" class="border-nor">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- -----PHẦN NỘI DUNG---- -->
+            <div class="grid-content">
+                <section class="content">
+                    <!-- //FORM -->
+                    <h1 class="wc">Chào mừng bạn đến với tạp chí HTML5 và CSS3</h1>
+                    <form action="" class="frm-form">
+                        <div class="flex-input">
+                            <div>
+                                <p class="mx-3">Tên đăng nhập: </p> <br>
+                                <p class="mx-3">Mật khẩu: </p> <br>
+                                <p class="mx-3">Email: </p><br>
+                                <p class="mx-3">Thành phố: </p> <br>
+                                <p class="mx-3">Độ tuổi trung bình: </p>
+                            </div>
+                            <div class="ip">
+                                <input type="text" placeholder="Tên đăng nhập ít nhất 6 kí tự" class="mx-4 p-2"> <br>
+                                <input type="password" placeholder="Tên đăng nhập ít nhất có 1 số và 1 chữ viết hoa" class="mx-4 p-2"> <br>
+                                <input type="text" class="mx-4 p-2"> <br>
+                                <input list="tp" class="mx-4 p-2">
+                                <datalist id="tp">
+                        <option value="Hà Nội"></option>
+                        <option value="Hồ Chí Minh"></option>
+                        <option value="Đà Nẵng"></option> 
+                        </datalist> <br>
+                                <input type="range" class="my-1" min="0" max="100" value="18" id="ranger">
+                            </div>
+                        </div>
+                        <div>
+                            <p>Bạn muốn theo dõi bài viết từ chủ đề nào?</p>
+                            <div class="selectly">
+                                <div class="html5">
+                                    <input type="checkbox" value=" " class="ipy">HTML5 cơ bản <br>
+                                    <input type="checkbox" value=" " class="ipy">HTML5 nâng cao <br>
+                                </div>
+                                <div class="css3">
+                                    <input type="checkbox" value=" " class="ipy">CSS3 cơ bản <br>
+                                    <input type="checkbox" value=" " class="ipy">CSS3 nâng cao <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button class="btnmain">Làm Lại</button>
+                            <button class="btnmain">Đăng ký</button>
+                        </div>
+                    </form>
+                    <!-- ----HTML5 -->
+                    <div>
+                        <h1 class="main">Thành Phần HTML5</h1>
+                        <div class="flex-icons">
+                            <div>
+                                <img src="images/icon1.jpg" alt="" class="ic">
+                                <p class="txt">effects</p>
+                            </div>
+                            <div>
+                                <img src="images/icon2.jpg" alt="" class="ic">
+                                <p class="txt">conectivity</p>
+                            </div>
+                            <div>
+                                <img src="images/icon3.jpg" alt="" class="ic">
+                                <p class="txt">multimedia</p>
+                            </div>
+                            <div>
+                                <img src="images/icon4.jpg" alt="" class="ic">
+                                <p class="txt">offline storage</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ---PHẦN ASIDE BANNER--- -->
+                <aside class="asbanner">
+                    <img src="images/banner.jpg" alt="" class="max-w-full">
+                    <p class="rgt">Register</p>
+                </aside>
+            </div>
+            <footer class="footer-main">
+                <p class="ft">Đây là trang web phục vụ việc thực hành của sinh viên FPT Polytechnic <br> Nghiêm cấm sử dụng với mục đích thương mại</p>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
